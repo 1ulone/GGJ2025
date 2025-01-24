@@ -7,9 +7,13 @@ public class HPSystem : MonoBehaviour
     public static HPSystem Instance { get; private set; }
 
     [SerializeField] private Image maskHP;
+    [SerializeField] private Image maskHP_E;
     //setting maxhp disini mas
     public int maximumHP;
-    private float currentHP;
+    public float currentHP;
+
+    public int maximumHP_E;
+	public float currentHP_E;
 
     private void Awake()
     {
@@ -47,5 +51,22 @@ public class HPSystem : MonoBehaviour
         currentHP = Mathf.Clamp(currentHealth, 0, maximumHP); 
         UpdateFillAmount();
     }
+
+
+    //update gambar aja
+    private void UpdateFillAmountE()
+    {
+        float fillAmount = currentHP_E / maximumHP_E;
+        maskHP_E.fillAmount = Mathf.Clamp01(fillAmount); 
+    }
+
+
+    //Update nilai currentHP
+    public void UpdateHealthE(float currentHealth)
+    {
+        currentHP_E = Mathf.Clamp(currentHealth, 0, maximumHP_E); 
+        UpdateFillAmountE();
+    }
+
 
 }

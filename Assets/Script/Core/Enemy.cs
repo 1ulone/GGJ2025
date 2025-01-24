@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class Enemy : MonoBehaviour, IDamageable
@@ -8,10 +9,11 @@ public class Enemy : MonoBehaviour, IDamageable
 	[SerializeField] private LayerMask playerMask;
 	[SerializeField] private float playerRadius;
 
-	[SerializeField] private float attackPercentage = 50;
-	[SerializeField] private float dodgePercentage = 80;
+	[SerializeField] private float defaultattackPercentage = 50;
+	[SerializeField] private float defaultdodgePercentage = 80;
+	[SerializeField] private float defaultHealth = 100;
 
-	private float health = 100;
+	private float health, attackPercentage, dodgePercentage;
 	private float dashTimer;
 	private float angle;
 
@@ -26,15 +28,28 @@ public class Enemy : MonoBehaviour, IDamageable
 	{
 		player = FindObjectOfType<PlayerController>();
 		rb = GetComponent<Rigidbody2D>();
+		rend = GetComponent<SpriteRenderer>();
+
+		health = defaultHealth;
+		attackPercentage = defaultattackPercentage;
+		dodgePercentage = defaultdodgePercentage;
 	}
 
 	private void Update()
 	{
 		onPlayer = Physics2D.OverlapCircle(transform.position, playerRadius, playerMask);
+		if (health <= 50)
+			defaultattackPercentage = 80f;
 
 		if (dashTimer > 0)
 		{
 			dashTimer -= Time.deltaTime;
+			Collider2D col = Physics2D.OverlapCircle(transform.position, playerRadius, playerMask);
+			if(col != null && !player.onAttack)
+			{
+				if (col.gameObject.TryGetComponent<IDamageable>(out IDamageable d))
+					d.GetHurt();
+			}
 			if (dashTimer <= 0)
 				rb.velocity = Vector2.zero;
 			return;
@@ -70,6 +85,9 @@ public class Enemy : MonoBehaviour, IDamageable
 			Vector2 dir = player.transform.position - transform.position;
 			transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
 			circleAround = false;
+
+			if (attackPercentage > 75)
+				Attack(player.transform.position - transform.position);
 		}
 	}
 
@@ -108,12 +126,19 @@ public class Enemy : MonoBehaviour, IDamageable
 		rb.AddForce(dir * dashSpeed, ForceMode2D.Impulse);
 	}
 
-	public void GetHurt()
+	public void GetHurt(int damage = 10)
 	{
 		if (onHurt)
 			return;
 
+		health -= damage;
+
+		if (health < -10)
+			StartCoroutine(Die());
+
+		HitStop.instances.Initiate(0.2f);
 		StartCoroutine(Hitflash());
+		HPSystem.Instance.UpdateHealthE(health);
 		onHurt = true;
 	}
 
@@ -130,6 +155,12 @@ public class Enemy : MonoBehaviour, IDamageable
 		}
 
 		onHurt = false;
+	}
+
+	private IEnumerator Die()
+	{
+		yield return new WaitForSeconds(1f);
+		SceneManager.LoadScene(1);
 	}
 
 	private void OnDrawGizmos()

@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour, IDamageable
 	[SerializeField] private float defaultSpeed = 10;
 	[SerializeField] private float dashMultiplier = 20;
 	[SerializeField] private float defaultDampValue = 0.2f;
+	[SerializeField] private float bubbleRadius = 3;
+	[SerializeField] private LayerMask enemyMask;
 
 	private Rigidbody2D rb;
 	private Vector2 dir;
@@ -16,6 +18,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 	private bool onHurt;
 	private float dampValue, speed, dashTimer;
 	private float defaultDashTimer = 0.75f;
+	public float health { get; private set; }
 	
 	//input
 	private void Start()
@@ -26,6 +29,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 		dampValue = defaultDampValue;
 		speed = defaultSpeed;
 		dashTimer = 0;
+		health = 100;
 	}
 
 	private void OnTriggerEnter2D(Collider2D other)
@@ -38,8 +42,17 @@ public class PlayerController : MonoBehaviour, IDamageable
 	{
 		if (dashTimer > 0)
 		{
+
 			dashTimer -= Time.deltaTime;
 			onAttack = true;
+
+
+			Collider2D col = Physics2D.OverlapCircle(transform.position, bubbleRadius, enemyMask);
+			if(col != null)
+			{
+				if (col.gameObject.TryGetComponent<IDamageable>(out IDamageable d))
+					d.GetHurt();
+			}
 		}
 		else 
 		{
@@ -56,7 +69,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 		float yy = Input.GetAxisRaw("Vertical");
 		dir = new Vector2(xx, yy);
 		Vector2 refVel = Vector2.zero;
-		dampValue = GameManager.instances.health / 500;
+		dampValue = health / 500;
 		
 		if (dashTimer > 0)
 			return;
@@ -78,10 +91,17 @@ public class PlayerController : MonoBehaviour, IDamageable
 			rb.AddForce(Vector2.right * dashMultiplier, ForceMode2D.Impulse);
 	}
 
-	public void GetHurt()
+	public void GetHurt(int damage = 10)
 	{
 		if (onHurt)
 			return;
+
+		if (onAttack)
+			return;
+
+		HitStop.instances.Initiate(0.2f);
+		health -= damage;
+		HPSystem.Instance.UpdateHealth(health);
 
 		StartCoroutine(Hitflash());
 		onHurt = true;
