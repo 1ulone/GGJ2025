@@ -10,8 +10,13 @@ public class TestingScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            HPSystem.Instance.UpdateHealth(50);
+            UpgradeSystem.Instance.HideUpgradeMenu();
         }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            UpgradeSystem.Instance.ShowUpgradeMenu();
+        }
+
     }
 
 }
