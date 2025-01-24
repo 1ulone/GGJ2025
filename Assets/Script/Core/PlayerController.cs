@@ -1,35 +1,49 @@
 using System.Collections;
 using UnityEngine;
+using CameraShake;
 
 public class PlayerController : MonoBehaviour, IDamageable
 {
 	public bool onAttack { get; private set; }
 
+	[SerializeField] private int defaultDamage = 10;
 	[SerializeField] private float defaultSpeed = 10;
 	[SerializeField] private float dashMultiplier = 20;
 	[SerializeField] private float defaultDampValue = 0.2f;
 	[SerializeField] private float bubbleRadius = 3;
 	[SerializeField] private LayerMask enemyMask;
+	[SerializeField] private BubbleSystem bubble;
 
 	private Rigidbody2D rb;
 	private Vector2 dir;
 	private SpriteRenderer rend;
+	private Animator anim;
+	private Coroutine routines;
 
 	private bool onHurt;
 	private float dampValue, speed, dashTimer;
 	private float defaultDashTimer = 0.75f;
-	public float health { get; private set; }
+	private int facingDirection;
+	private string state;
+	private float animTimer;
+	private int damage;
+	private int maxhealth = 100;
+
+	public int health { get; private set; }
 	
 	//input
 	private void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
 		rend = GetComponent<SpriteRenderer>();
+		anim = GetComponent<Animator>();
 		onHurt = false;
 		dampValue = defaultDampValue;
 		speed = defaultSpeed;
 		dashTimer = 0;
-		health = 100;
+		health = maxhealth;
+		facingDirection = -1;
+		damage = defaultDamage;
 	}
 
 	private void OnTriggerEnter2D(Collider2D other)
@@ -40,48 +54,78 @@ public class PlayerController : MonoBehaviour, IDamageable
 
 	private void Update()
 	{
+		RotateFaceDirection();
+		HandleAnimation();
+
+		float xx = Input.GetAxisRaw("Horizontal");
+		float yy = Input.GetAxisRaw("Vertical");
+		dir = new Vector2(xx, yy);
+		Vector2 refVel = Vector2.zero;
+//		dampValue = health / 500;
+		dampValue = defaultDampValue;
+		speed = defaultSpeed;
+
+
+
+		if (routines == null && rb.velocity != Vector2.zero && !bubble.onPop)
+			routines = StartCoroutine(SpawnBubble());
+
 		if (dashTimer > 0)
 		{
 
 			dashTimer -= Time.deltaTime;
 			onAttack = true;
 
-
 			Collider2D col = Physics2D.OverlapCircle(transform.position, bubbleRadius, enemyMask);
 			if(col != null)
 			{
 				if (col.gameObject.TryGetComponent<IDamageable>(out IDamageable d))
-					d.GetHurt();
+					d.GetHurt(damage);
 			}
 		}
 		else 
 		{
 			onAttack = false;
+			rb.velocity = Vector2.SmoothDamp(rb.velocity, dir * speed, ref refVel, dampValue);
 		}
 
 		if (Input.GetKeyDown(KeyCode.Space))
 			DashAttack();
 	}
 
-	private void FixedUpdate()
+	private void HandleAnimation()
 	{
-		float xx = Input.GetAxisRaw("Horizontal");
-		float yy = Input.GetAxisRaw("Vertical");
-		dir = new Vector2(xx, yy);
-		Vector2 refVel = Vector2.zero;
-		dampValue = health / 500;
-		
-		if (dashTimer > 0)
+		if (onHurt)
+		{
+			ChangeAnimation("cat-hurt");
 			return;
-		
-		rb.velocity = Vector2.SmoothDamp(rb.velocity, dir * defaultSpeed, ref refVel, dampValue);
+		}
+
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			ChangeAnimation("cat-dash");
+			return;
+		}
+
+		ChangeAnimation(dir != Vector2.zero ? "cat-idle" : "cat-walk");
 	}
+
+	private	IEnumerator SpawnBubble()
+	{
+		yield return new WaitForSeconds(0.1f);
+		Pool.instances.Create("bubble-eff", transform.position, Quaternion.identity);
+		routines = null;
+	}
+
+	public void Footstep()
+		=> SFX.instances.PlayAudio("walk");
 
 	private void DashAttack()
 	{
 		if (dashTimer > 0)
 			return;
 
+		ChangeAnimation("cat-dash");
 		dashTimer = defaultDashTimer;
 		rb.velocity = Vector2.zero;
 
@@ -89,6 +133,15 @@ public class PlayerController : MonoBehaviour, IDamageable
 			rb.AddForce(dir * dashMultiplier, ForceMode2D.Impulse);
 		else 
 			rb.AddForce(Vector2.right * dashMultiplier, ForceMode2D.Impulse);
+
+		SFX.instances.PlayAudio("dash");
+	}
+
+	private void ChangeAnimation(string n)
+	{
+		if (state != n)
+			anim.Play(state);
+		state = n;
 	}
 
 	public void GetHurt(int damage = 10)
@@ -99,17 +152,34 @@ public class PlayerController : MonoBehaviour, IDamageable
 		if (onAttack)
 			return;
 
+		SFX.instances.PlayAudio("hurt");
+		CameraShaker.Presets.Explosion2D(6, 8, 0.5f);
 		HitStop.instances.Initiate(0.2f);
 		health -= damage;
+		bubble.UpdateBubble(health);
 		HPSystem.Instance.UpdateHealth(health);
+		ChangeAnimation("cat-hurt");
 
 		StartCoroutine(Hitflash());
 		onHurt = true;
 	}
 
+	public void UpdateDamage(int dmg)
+	{
+		damage += dmg; 
+	}
+
+	public void UpdateMaxhealth(int h)
+	{
+		maxhealth += h;
+		health = maxhealth;
+		HPSystem.Instance.UpdateMaxhealth(maxhealth);
+		HPSystem.Instance.UpdateHealth(health);
+	}
+
 	private IEnumerator Hitflash()
 	{
-		int i = 10;
+		int i = 5;
 		while(i > 0)
 		{	
 			rend.enabled = false;
@@ -120,6 +190,15 @@ public class PlayerController : MonoBehaviour, IDamageable
 		}
 
 		onHurt = false;
+	}
+
+	private void RotateFaceDirection()
+	{
+		if ((dir.normalized.x == 1 || dir.normalized.x == -1) && dir.normalized.x != facingDirection)
+		{
+			transform.Rotate(0, 180, 0);
+			facingDirection *= -1;
+		}
 	}
 
 	private void OnDrawGizmos()

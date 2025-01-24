@@ -36,7 +36,6 @@ public class HPSystem : MonoBehaviour
     }
 
 
-
     //update gambar aja
     private void UpdateFillAmount()
     {
@@ -52,6 +51,8 @@ public class HPSystem : MonoBehaviour
         UpdateFillAmount();
     }
 
+	public void UpdateMaxhealth(int maxhealth)
+		=> maximumHP = maxhealth;
 
     //update gambar aja
     private void UpdateFillAmountE()

@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!156049354 &23398825
 Grid:
   m_ObjectHideFlags: 0
@@ -23240,7 +23240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!156049354 &1188279278
 Grid:
   m_ObjectHideFlags: 0
@@ -47107,7 +47107,7 @@ TilemapRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.171875, y: 0.125, z: 0}
+  m_ChunkCullingBounds: {x: 0.171875, y: 0.03571427, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0

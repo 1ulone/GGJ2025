@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UpgradeSystem : MonoBehaviour
 {
@@ -14,6 +16,7 @@ public class UpgradeSystem : MonoBehaviour
     private GameObject Addantional;
 
     private Coroutine activeCoroutine;
+	private Action selectedAction;
     public TextMeshProUGUI description;
 
     private void Awake()
@@ -41,6 +44,7 @@ public class UpgradeSystem : MonoBehaviour
     {
         if (!isTransitioning)
         {
+			Time.timeScale = 0;
             if (activeCoroutine != null) StopCoroutine(activeCoroutine);
             activeCoroutine = StartCoroutine(TransitionAktif());
         }
@@ -106,15 +110,34 @@ public class UpgradeSystem : MonoBehaviour
     }
 
     //fungsi ketika item di click
+	bool isHealthUpgrade = false;
     public void SelectedItem1()
     {
-        description.text = "Item 1 selected";
+		selectedAction = () => { FindObjectOfType<PlayerController>().UpdateMaxhealth(10); };
+        description.text = "Increase your maximum bubble size";
+		isHealthUpgrade = true;
         ShowConfirm();
     }
 
     public void SelectedItem2()
     {
-        description.text = "Item 2 Selected";
+		selectedAction = () => { FindObjectOfType<PlayerController>().UpdateDamage(10); };
+        description.text = "Increase your dash damage";
+		isHealthUpgrade = false;
         ShowConfirm();
     }
+
+	public void Confirm()
+	{
+		StartCoroutine(ConfirmChangeScene());
+	}
+
+	private IEnumerator ConfirmChangeScene()
+	{
+		selectedAction.Invoke();
+		yield return new WaitForSecondsRealtime(2f);
+		description.text = isHealthUpgrade ? "You're maximum bubble size has increased!":"You're dash damage has been increased!";
+		yield return new WaitForSecondsRealtime(2f);
+		SceneManager.LoadScene(1);
+	}
 }

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using CameraShake;
 
 public class Enemy : MonoBehaviour, IDamageable
 {
@@ -12,6 +13,8 @@ public class Enemy : MonoBehaviour, IDamageable
 	[SerializeField] private float defaultattackPercentage = 50;
 	[SerializeField] private float defaultdodgePercentage = 80;
 	[SerializeField] private float defaultHealth = 100;
+
+	[SerializeField] private BubbleSystem bubble;
 
 	private float health, attackPercentage, dodgePercentage;
 	private float dashTimer;
@@ -62,7 +65,6 @@ public class Enemy : MonoBehaviour, IDamageable
 				if (!circleAround)
 				{
 					angle = Mathf.Rad2Deg * (Mathf.Atan2(player.transform.position.y - transform.position.y, player.transform.position.x - transform.position.x));
-					Debug.Log(angle);
 					circleAround = true;
 				}
 			}
@@ -89,6 +91,8 @@ public class Enemy : MonoBehaviour, IDamageable
 			if (attackPercentage > 75)
 				Attack(player.transform.position - transform.position);
 		}
+		if (routines == null && !bubble.onPop)
+			routines = StartCoroutine(SpawnBubble());
 	}
 
 	private void LateUpdate()
@@ -115,6 +119,14 @@ public class Enemy : MonoBehaviour, IDamageable
 		Attack(ddir.normalized);
 	}
 
+	private Coroutine routines;
+	private	IEnumerator SpawnBubble()
+	{
+		Pool.instances.Create("bubble-eff", transform.position, Quaternion.identity);
+		yield return new WaitForSeconds(0.1f);
+		routines = null;
+	}
+
 	private void Attack(Vector2 dir)
 	{
 		if (dashTimer > 0)
@@ -123,6 +135,7 @@ public class Enemy : MonoBehaviour, IDamageable
 		attackPercentage = 50;
 		dashTimer = 0.75f;
 		circleAround = false;
+		SFX.instances.PlayAudio("dash");
 		rb.AddForce(dir * dashSpeed, ForceMode2D.Impulse);
 	}
 
@@ -136,6 +149,9 @@ public class Enemy : MonoBehaviour, IDamageable
 		if (health < -10)
 			StartCoroutine(Die());
 
+		
+		bubble.UpdateBubble(health);
+		CameraShaker.Presets.Explosion2D(2, 4, 0.5f);
 		HitStop.instances.Initiate(0.2f);
 		StartCoroutine(Hitflash());
 		HPSystem.Instance.UpdateHealthE(health);
@@ -144,7 +160,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
 	private IEnumerator Hitflash()
 	{
-		int i = 10;
+		int i = 5;
 		while(i > 0)
 		{	
 			rend.enabled = false;
@@ -160,7 +176,8 @@ public class Enemy : MonoBehaviour, IDamageable
 	private IEnumerator Die()
 	{
 		yield return new WaitForSeconds(1f);
-		SceneManager.LoadScene(1);
+		UpgradeSystem.Instance.ShowUpgradeMenu();
+//		SceneManager.LoadScene(1);
 	}
 
 	private void OnDrawGizmos()
