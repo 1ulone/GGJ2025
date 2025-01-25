@@ -7,16 +7,16 @@ public class SelectStage : MonoBehaviour
 {
     public void stageOnebutton()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("PrototypeScene");
     }
 
     public void stageTwobutton()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("PrototypeScene");
     }
 
     public void stageThreebutton()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("PrototypeScene");
     }
 }
