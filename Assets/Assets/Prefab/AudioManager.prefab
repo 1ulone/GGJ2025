@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8279409475955868134}
-  - component: {fileID: 4140117046819751954}
+  - component: {fileID: 6799695725771844149}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -29,10 +29,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6331687146957598181}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4140117046819751954
+--- !u!114 &6799695725771844149
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,6 +42,61 @@ MonoBehaviour:
   m_GameObject: {fileID: 988985724612000214}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de2166f73e2933348a7c12818fe892ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a5d5a1750a9dfc469393a4e6b23c822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1147517236979608595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6331687146957598181}
+  - component: {fileID: 4482191979883228218}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6331687146957598181
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147517236979608595}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 38.666145, y: -12.393573, z: -1.2994467}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8279409475955868134}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4482191979883228218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147517236979608595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93a676ab02b92bc4ebeb4b3d7938a17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musics:
+  - musicName: battle
+    musicClip: {fileID: 8300000, guid: 2b2acaefc2d346b499053a488e169d99, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    musicSource: {fileID: 0}
+    musicMixer: {fileID: 24100000, guid: 478e6454fd2c2854885a349a79daa981, type: 2}
+    musicMixGroup: {fileID: -4462013764426042612, guid: 478e6454fd2c2854885a349a79daa981, type: 2}
+    musicOn: {fileID: 24500006, guid: 478e6454fd2c2854885a349a79daa981, type: 2}
+    musicOff: {fileID: -6989173669214899212, guid: 478e6454fd2c2854885a349a79daa981, type: 2}
