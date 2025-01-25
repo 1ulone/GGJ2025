@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 83784635
+    locked: 0
+  - name: Ground(1)
+    uniqueID: 3246915323
+    locked: 0
+  - name: Decor
+    uniqueID: 563638629
+    locked: 0
+  - name: Collusion
+    uniqueID: 3061212373
+    locked: 0

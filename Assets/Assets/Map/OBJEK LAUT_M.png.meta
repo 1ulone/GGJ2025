@@ -1,0 +1,797 @@
+fileFormatVersion: 2
+guid: 2126d6314db25924ab76285e1f1dc2a8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OBJEK LAUT_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 947
+        width: 308
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d692482e0008d8f4db251a1d3acb9595
+      internalID: -588849141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_1
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 963
+        width: 317
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e59738fd559d4e4d9b8add0fb13d244
+      internalID: -1042989784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_2
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 957
+        width: 208
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdaff9870ec1e464cbb73bb5b8ab53de
+      internalID: 1265020068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_3
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 956
+        width: 141
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6528ae015f1d8a45bbbf38a77622c2b
+      internalID: -1250416325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_4
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 709
+        width: 222
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8c42fca2f7ae4468ee22e35a52361b
+      internalID: -1013853007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_5
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 708
+        width: 181
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76aaecadcb1d7a04a9763034e585ea8e
+      internalID: 1354212755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_6
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 703
+        width: 109
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088eec9bd5b3f73499a97526c1efa6a4
+      internalID: -399944516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_7
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 698
+        width: 207
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0930c8893dcfda14abf295da04fad575
+      internalID: -325373383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_8
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 706
+        width: 141
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5b9a152f5637540bf74da7d3b4712c
+      internalID: -41864913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_9
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 555
+        width: 146
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861dc2d6669f5e04a8ed4a9afc86ac9d
+      internalID: 1704561123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_10
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 558
+        width: 103
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39bf627e2bbbc94dbda30507f60cfaa
+      internalID: -1005479002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_11
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 404
+        width: 529
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8724ac6b8e30ffa4383083688239e3bd
+      internalID: 18158271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_12
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 414
+        width: 239
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9c8caffb8c69240853ba85522fb987
+      internalID: -222038393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_13
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1255
+        width: 91
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c953770bd7b5b4f4baeeff185156d5d6
+      internalID: 2020458731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_14
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 1264
+        width: 98
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b801f6a9cd07eda478ce8296588116ba
+      internalID: 2144288245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_15
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 412
+        width: 154
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14222321b8ec5554a851d89230d98205
+      internalID: 1247200823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_16
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 405
+        width: 231
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d162ba3178b55f840a5c82ccf82d8ca3
+      internalID: -673327487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_17
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 326
+        width: 123
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00962567881e5554a9fe2f35626b79c1
+      internalID: 647381996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_18
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 221
+        width: 173
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989a31bbd1ca6e34baa41d9b4c0e3059
+      internalID: -78919485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 206
+        width: 139
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beceb8e7fc7226a488b76766ecf88da4
+      internalID: 1082559302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_20
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 201
+        width: 93
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03cfad3c99be81e44a79e6ad55d750ee
+      internalID: 1645755368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_21
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 209
+        width: 122
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2e24eb12a9ce3428f2d8830618bffd
+      internalID: -1564274569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_22
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 203
+        width: 148
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1742ed634ac1d547aa886fbd562f2f3
+      internalID: -1056859374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_23
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 16
+        width: 214
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d77e7a2c74697844ba4b45d24b96352
+      internalID: 52397693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_24
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 5
+        width: 168
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0e9761d78691a4c8f0917bcabcb054
+      internalID: -773145751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_25
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 199
+        width: 114
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052a266108b1ee54fb7a3b00cd6ac2c6
+      internalID: 1293849471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_26
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 202
+        width: 92
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1bf08644000b0419e62e519a0710f5
+      internalID: -1940332556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_27
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 216
+        width: 62
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14c7b9a9dea10a45b05e4ccc7192527
+      internalID: -376302008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_28
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 4
+        width: 97
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a854864ec6b93469134f0f7b2aaebc
+      internalID: -882989971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_29
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 0
+        width: 56
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8916a1c00d94a4c9438af8c656f057
+      internalID: -1357657471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJEK LAUT_30
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 6
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc55fc8298db6d14bbab442d0fc0f361
+      internalID: 273821377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      OBJEK LAUT_0: -588849141
+      OBJEK LAUT_1: -1042989784
+      OBJEK LAUT_10: -1005479002
+      OBJEK LAUT_11: 18158271
+      OBJEK LAUT_12: -222038393
+      OBJEK LAUT_13: 2020458731
+      OBJEK LAUT_14: 2144288245
+      OBJEK LAUT_15: 1247200823
+      OBJEK LAUT_16: -673327487
+      OBJEK LAUT_17: 647381996
+      OBJEK LAUT_18: -78919485
+      OBJEK LAUT_19: 1082559302
+      OBJEK LAUT_2: 1265020068
+      OBJEK LAUT_20: 1645755368
+      OBJEK LAUT_21: -1564274569
+      OBJEK LAUT_22: -1056859374
+      OBJEK LAUT_23: 52397693
+      OBJEK LAUT_24: -773145751
+      OBJEK LAUT_25: 1293849471
+      OBJEK LAUT_26: -1940332556
+      OBJEK LAUT_27: -376302008
+      OBJEK LAUT_28: -882989971
+      OBJEK LAUT_29: -1357657471
+      OBJEK LAUT_3: -1250416325
+      OBJEK LAUT_30: 273821377
+      OBJEK LAUT_31: 1314546488
+      OBJEK LAUT_4: -1013853007
+      OBJEK LAUT_5: 1354212755
+      OBJEK LAUT_6: -399944516
+      OBJEK LAUT_7: -325373383
+      OBJEK LAUT_8: -41864913
+      OBJEK LAUT_9: 1704561123
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

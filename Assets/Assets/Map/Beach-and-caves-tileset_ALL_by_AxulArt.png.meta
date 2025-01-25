@@ -1,0 +1,2050 @@
+fileFormatVersion: 2
+guid: 215124691c574e0428f305ff4a6bc2cb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 14
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfddea2baa247524ea675ae8ceaf4531
+      internalID: -293033620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a77802be8d8180498e342f103b64a3e
+      internalID: 940030790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885c48163c53aff49b4f517448e88cff
+      internalID: -1122543462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 336
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87cb377ca816c204bae039a80be8e01f
+      internalID: 479096061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 360
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e189f891b8de424abb4230bed86cc3a
+      internalID: 1904114566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_6
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 348
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c90b99b22baca4fb2abbe19d167c91
+      internalID: 1883835649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_7
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 336
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81739ecd722460d43bee3239ba1fa27a
+      internalID: 915393931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_8
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 336
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0c14cb4cf742d439706733c8da6815
+      internalID: 1167337522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_9
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 352
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a02d4d0fd0cfc4eaff4441ff3e9714
+      internalID: 1873575080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_10
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 371
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5ce3c10af2fb6428c9471a3bc7d753
+      internalID: 337976845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_11
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 368
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6065bb0138bf3b46a735b7a8fad8c80
+      internalID: -1350978664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_12
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 368
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e481692de48a394eb83802ada876f85
+      internalID: 1056753022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 376
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa40f6929c20c948a3b17a2535455b2
+      internalID: 1434155918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_14
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 371
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c934ea200cb9854a894ad3983472a2d
+      internalID: 353580078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_15
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 320
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb02ddf0daf6214da748bc6bb838f9a
+      internalID: -1478072249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_16
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 320
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd374452aacc454e8c89c323451b1ed
+      internalID: 1520378576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_17
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 352
+        width: 42
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2579a1d0b04ec94cb8d479dc4da3e91
+      internalID: 1480347439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_18
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 336
+        width: 42
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407d016d39a4d654a8d6df686fdd14fb
+      internalID: -76908853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_19
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 350
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d59a72f474d87440b74b2b921cb10d0
+      internalID: 130140870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_20
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 350
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00994a3c4089b634a8f913faafb01a9a
+      internalID: -1530475172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_21
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 350
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9d0f82df561e848a423d8be6985793
+      internalID: 679207680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_22
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 338
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e899d2e65005d3243939eb49f77511fe
+      internalID: 1348634827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 338
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc175b59a3609141a22cf60b3067d59
+      internalID: -1037781314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_24
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 338
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e7408647537ec499cbb1085992dfc1
+      internalID: -1060657285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_25
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 323
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4620e91d852fe14390dfb863d06c8b3
+      internalID: -1892276472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_26
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 323
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1c02ec07bc4d5488bcfabadd85873c
+      internalID: -1631817631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_27
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 323
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb2c1831c265f843af9530e5a65665d
+      internalID: -1132886041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_28
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 350
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad982a057c149a94c9bc3e494e9e1666
+      internalID: -418013939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_29
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 350
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774063e0015b4df468bd51439cb1b60f
+      internalID: -2120172212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_30
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 350
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e31598877e3de45b176665002331d5
+      internalID: 1312130862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_31
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 338
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8b7942e9e017d468d7a240678af85a
+      internalID: -1107719171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_32
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 338
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d23dfd6169fd4e43ba4e60acf8bef7b
+      internalID: -867193898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_33
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 338
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527bb307be8f82e4380368364082495c
+      internalID: 319756809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_34
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 323
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fd38f92e96db048b719d9e838e7b52
+      internalID: -1632051229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_35
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 323
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c925ff7dba3b34d97efefbbca15439
+      internalID: -783243450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_36
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 323
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942deb549df1ce54b95317feb3d317e6
+      internalID: 194322048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_37
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7ff85365860da44b85189c1c1db479
+      internalID: 265076964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf6f4d3dc3cbef4c9be4a2f06fe639f
+      internalID: -1015801597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_39
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 319
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8de257e3be6a74d91676dc0291787a
+      internalID: 1338182284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_40
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 319
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421c8e50d9a455c40af55a3c8c140675
+      internalID: -1159299367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 303
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43cb95ea79da6844f9c38a6e6cbfd0ba
+      internalID: 282540334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_42
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 303
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc86a70f0209ee040a43a051dc350d01
+      internalID: 1454514026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_43
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 303
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc3dcb39c938dc468d923faa57fb511
+      internalID: 1305778128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a60d9c7a5559b24c8fa96216a318922
+      internalID: -285618947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_45
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 288
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84edac3ef5a36d47b3789f13df71e06
+      internalID: -396932143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_46
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 288
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865836a0eeacd3347b40d5caa732b9c9
+      internalID: 1455184639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_47
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 319
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519f33ce149640b439afb9ced1d190db
+      internalID: 1227138490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 319
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc6a6524d021b2448883e58a3ae9f44
+      internalID: 1462813144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_49
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 319
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0580cf3121dfac46a120ace56429948
+      internalID: -679998890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_50
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 304
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07054844ff98a8c44903fe5d5afb3407
+      internalID: 1086375438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_51
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 304
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0117d74c026b9a74ea5747fffb91c16c
+      internalID: -2837831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_52
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 304
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d210e77522a7dbb41abf5f2ed7b1719f
+      internalID: 92641547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_53
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe6063d47c968b43a6877021d2e0c69
+      internalID: 1432555913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_54
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4a5e4a1d1d14b4a8538badfc28517f
+      internalID: -184198675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_55
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0b7eb8ed956ec43ba5d2a068fd350b
+      internalID: -866243569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_56
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 283
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6948712a04078e24d917e316fa419ffb
+      internalID: 784244784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_57
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 283
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8639760743cffa4bbef5bd025b9d325
+      internalID: -1363330789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_58
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 283
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f232d9a76d1820d498f208d2cc20b559
+      internalID: 1783339668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_59
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 261
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ef46e21d8eab34b9810ee3817c68e8
+      internalID: 916845113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_60
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 261
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6f9f2bfcd7feb498b9cfe98151d67f
+      internalID: -1711925132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_61
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 261
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1312ce9a496c14c46a271328a33dc0b3
+      internalID: 779777901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_62
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 287
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc08ccedabb74ac4ea126d63318a14c0
+      internalID: -1664736810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_63
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 287
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6220b50db337c304397f86404d928fb0
+      internalID: -1685741810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_64
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 287
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e17807d9ed62a4ea594322be274140
+      internalID: -137196284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_65
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 275
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4924d9d3d6d817945a92567dcdbf9df6
+      internalID: -194904596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_66
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 275
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8bdac73b5d68144bb7fd7260c8249f5
+      internalID: -684151606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_67
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 275
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e679ffe67aee6c44580fca6f85c436d8
+      internalID: 1729880128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_68
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 260
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3280d753dac88e84ea1a42a154199315
+      internalID: -732956775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_69
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 259
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12551c45db607024aba61093685ee519
+      internalID: -1273265052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_70
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 259
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308f2309beee1874584a492cbbf6e82d
+      internalID: -516258114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_71
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 286
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33dc021188b1c4844985be9f33b361d7
+      internalID: 1514705128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_72
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 286
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad6901f04df625419cdf20d64ac1415
+      internalID: 309174493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_73
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 286
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d9c5a2d00e4644b9dca1fe2778bce6
+      internalID: 1084044462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_74
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 274
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0b12fc176403f4381a2f57adca20d7
+      internalID: 84987549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_75
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 274
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c63f1cb26503204a96957c0fdc56fbd
+      internalID: 599369963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_76
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 274
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f402d088eaa2774b9f2cd33a11b3284
+      internalID: 454834753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_77
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 257
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016fdb0ed42fd6e4d90ad71949db0946
+      internalID: 1793253632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_78
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 257
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b7da42be3908549bcc1dc8aebbc925
+      internalID: 774729869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_79
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 257
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6730f910259ed04cba6150659b1c3c2
+      internalID: -1122191798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_80
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 328
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ab1adf945f9764086032676cb47bdc
+      internalID: 50946784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_81
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 328
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b63490a798d1a2499ec0d48b4dcefbf
+      internalID: 893129664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_82
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 260
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b660db600285f4ea89e1aedae119f4
+      internalID: 550106200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_83
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 259
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8713a35d05b7e71419e2798c80f25b97
+      internalID: -630761875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_84
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 309
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f876202de875b1c4dada2bca4dacc0fd
+      internalID: 32919584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a103b4203daaaed4787fc890f2a95f6e
+      internalID: -294608493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_85
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 185
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2eb9ba40788b624497710df84e900d9
+      internalID: -66782637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_86
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 185
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21ca4a9eb7797e4f97a451291ce0eee
+      internalID: 36356942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-and-caves-tileset_ALL_by_AxulArt_87
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 177
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2fb5c001d251243a9c973b81da591e
+      internalID: -505864539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Beach-and-caves-tileset_ALL_by_AxulArt_0: -293033620
+      Beach-and-caves-tileset_ALL_by_AxulArt_1: 940030790
+      Beach-and-caves-tileset_ALL_by_AxulArt_10: 337976845
+      Beach-and-caves-tileset_ALL_by_AxulArt_11: -1350978664
+      Beach-and-caves-tileset_ALL_by_AxulArt_12: 1056753022
+      Beach-and-caves-tileset_ALL_by_AxulArt_13: 1434155918
+      Beach-and-caves-tileset_ALL_by_AxulArt_14: 353580078
+      Beach-and-caves-tileset_ALL_by_AxulArt_15: -1478072249
+      Beach-and-caves-tileset_ALL_by_AxulArt_16: 1520378576
+      Beach-and-caves-tileset_ALL_by_AxulArt_17: 1480347439
+      Beach-and-caves-tileset_ALL_by_AxulArt_18: -76908853
+      Beach-and-caves-tileset_ALL_by_AxulArt_19: 130140870
+      Beach-and-caves-tileset_ALL_by_AxulArt_2: -1122543462
+      Beach-and-caves-tileset_ALL_by_AxulArt_20: -1530475172
+      Beach-and-caves-tileset_ALL_by_AxulArt_21: 679207680
+      Beach-and-caves-tileset_ALL_by_AxulArt_22: 1348634827
+      Beach-and-caves-tileset_ALL_by_AxulArt_23: -1037781314
+      Beach-and-caves-tileset_ALL_by_AxulArt_24: -1060657285
+      Beach-and-caves-tileset_ALL_by_AxulArt_25: -1892276472
+      Beach-and-caves-tileset_ALL_by_AxulArt_26: -1631817631
+      Beach-and-caves-tileset_ALL_by_AxulArt_27: -1132886041
+      Beach-and-caves-tileset_ALL_by_AxulArt_28: -418013939
+      Beach-and-caves-tileset_ALL_by_AxulArt_29: -2120172212
+      Beach-and-caves-tileset_ALL_by_AxulArt_3: -294608493
+      Beach-and-caves-tileset_ALL_by_AxulArt_30: 1312130862
+      Beach-and-caves-tileset_ALL_by_AxulArt_31: -1107719171
+      Beach-and-caves-tileset_ALL_by_AxulArt_32: -867193898
+      Beach-and-caves-tileset_ALL_by_AxulArt_33: 319756809
+      Beach-and-caves-tileset_ALL_by_AxulArt_34: -1632051229
+      Beach-and-caves-tileset_ALL_by_AxulArt_35: -783243450
+      Beach-and-caves-tileset_ALL_by_AxulArt_36: 194322048
+      Beach-and-caves-tileset_ALL_by_AxulArt_37: 265076964
+      Beach-and-caves-tileset_ALL_by_AxulArt_38: -1015801597
+      Beach-and-caves-tileset_ALL_by_AxulArt_39: 1338182284
+      Beach-and-caves-tileset_ALL_by_AxulArt_4: 479096061
+      Beach-and-caves-tileset_ALL_by_AxulArt_40: -1159299367
+      Beach-and-caves-tileset_ALL_by_AxulArt_41: 282540334
+      Beach-and-caves-tileset_ALL_by_AxulArt_42: 1454514026
+      Beach-and-caves-tileset_ALL_by_AxulArt_43: 1305778128
+      Beach-and-caves-tileset_ALL_by_AxulArt_44: -285618947
+      Beach-and-caves-tileset_ALL_by_AxulArt_45: -396932143
+      Beach-and-caves-tileset_ALL_by_AxulArt_46: 1455184639
+      Beach-and-caves-tileset_ALL_by_AxulArt_47: 1227138490
+      Beach-and-caves-tileset_ALL_by_AxulArt_48: 1462813144
+      Beach-and-caves-tileset_ALL_by_AxulArt_49: -679998890
+      Beach-and-caves-tileset_ALL_by_AxulArt_5: 1904114566
+      Beach-and-caves-tileset_ALL_by_AxulArt_50: 1086375438
+      Beach-and-caves-tileset_ALL_by_AxulArt_51: -2837831
+      Beach-and-caves-tileset_ALL_by_AxulArt_52: 92641547
+      Beach-and-caves-tileset_ALL_by_AxulArt_53: 1432555913
+      Beach-and-caves-tileset_ALL_by_AxulArt_54: -184198675
+      Beach-and-caves-tileset_ALL_by_AxulArt_55: -866243569
+      Beach-and-caves-tileset_ALL_by_AxulArt_56: 784244784
+      Beach-and-caves-tileset_ALL_by_AxulArt_57: -1363330789
+      Beach-and-caves-tileset_ALL_by_AxulArt_58: 1783339668
+      Beach-and-caves-tileset_ALL_by_AxulArt_59: 916845113
+      Beach-and-caves-tileset_ALL_by_AxulArt_6: 1883835649
+      Beach-and-caves-tileset_ALL_by_AxulArt_60: -1711925132
+      Beach-and-caves-tileset_ALL_by_AxulArt_61: 779777901
+      Beach-and-caves-tileset_ALL_by_AxulArt_62: -1664736810
+      Beach-and-caves-tileset_ALL_by_AxulArt_63: -1685741810
+      Beach-and-caves-tileset_ALL_by_AxulArt_64: -137196284
+      Beach-and-caves-tileset_ALL_by_AxulArt_65: -194904596
+      Beach-and-caves-tileset_ALL_by_AxulArt_66: -684151606
+      Beach-and-caves-tileset_ALL_by_AxulArt_67: 1729880128
+      Beach-and-caves-tileset_ALL_by_AxulArt_68: -732956775
+      Beach-and-caves-tileset_ALL_by_AxulArt_69: -1273265052
+      Beach-and-caves-tileset_ALL_by_AxulArt_7: 915393931
+      Beach-and-caves-tileset_ALL_by_AxulArt_70: -516258114
+      Beach-and-caves-tileset_ALL_by_AxulArt_71: 1514705128
+      Beach-and-caves-tileset_ALL_by_AxulArt_72: 309174493
+      Beach-and-caves-tileset_ALL_by_AxulArt_73: 1084044462
+      Beach-and-caves-tileset_ALL_by_AxulArt_74: 84987549
+      Beach-and-caves-tileset_ALL_by_AxulArt_75: 599369963
+      Beach-and-caves-tileset_ALL_by_AxulArt_76: 454834753
+      Beach-and-caves-tileset_ALL_by_AxulArt_77: 1793253632
+      Beach-and-caves-tileset_ALL_by_AxulArt_78: 774729869
+      Beach-and-caves-tileset_ALL_by_AxulArt_79: -1122191798
+      Beach-and-caves-tileset_ALL_by_AxulArt_8: 1167337522
+      Beach-and-caves-tileset_ALL_by_AxulArt_80: 50946784
+      Beach-and-caves-tileset_ALL_by_AxulArt_81: 893129664
+      Beach-and-caves-tileset_ALL_by_AxulArt_82: 550106200
+      Beach-and-caves-tileset_ALL_by_AxulArt_83: -630761875
+      Beach-and-caves-tileset_ALL_by_AxulArt_84: 32919584
+      Beach-and-caves-tileset_ALL_by_AxulArt_85: -66782637
+      Beach-and-caves-tileset_ALL_by_AxulArt_86: 36356942
+      Beach-and-caves-tileset_ALL_by_AxulArt_87: -505864539
+      Beach-and-caves-tileset_ALL_by_AxulArt_9: 1873575080
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
