@@ -10,11 +10,11 @@ public class TestingScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            UpgradeSystem.Instance.HideUpgradeMenu();
+            GameOver.Instance.ShowGO();
         }
         if (Input.GetKeyDown(KeyCode.A))
         {
-            UpgradeSystem.Instance.ShowUpgradeMenu();
+            GameOver.Instance.HideGO();
         }
 
     }
