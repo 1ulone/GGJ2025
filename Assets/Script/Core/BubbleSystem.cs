@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BubbleSystem : MonoBehaviour
 {
-	[SerializeField] private float bubbleSize = 2f;
+	[SerializeField] private float bubbleSize = 3f;
 	public bool onPop { get; private set; }
 
 	private void Start()
@@ -12,7 +12,7 @@ public class BubbleSystem : MonoBehaviour
 
 	public void UpdateBubble(float currHealth)
 	{
-		bubbleSize = currHealth / 50;
+		bubbleSize = currHealth / 33.3f;
 		transform.localScale = Vector3.one * bubbleSize;
 
 		if (bubbleSize <= 0.1f)

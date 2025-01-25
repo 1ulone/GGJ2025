@@ -9,8 +9,9 @@ public class PlayerController : MonoBehaviour, IDamageable
 	[SerializeField] private int defaultDamage = 10;
 	[SerializeField] private float defaultSpeed = 10;
 	[SerializeField] private float dashMultiplier = 20;
-	[SerializeField] private float defaultDampValue = 0.2f;
 	[SerializeField] private float bubbleRadius = 3;
+	[SerializeField] private float friction = 0.5f;
+	[SerializeField] private float acceleration = 10;
 	[SerializeField] private LayerMask enemyMask;
 	[SerializeField] private BubbleSystem bubble;
 
@@ -22,7 +23,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 
 	private bool onHurt;
 	private float dampValue, speed, dashTimer;
-	private float defaultDashTimer = 0.75f;
+	private float defaultDashTimer = 1.25f;
 	private int facingDirection;
 	private string state;
 	private float animTimer;
@@ -38,7 +39,6 @@ public class PlayerController : MonoBehaviour, IDamageable
 		rend = GetComponent<SpriteRenderer>();
 		anim = GetComponent<Animator>();
 		onHurt = false;
-		dampValue = defaultDampValue;
 		speed = defaultSpeed;
 		dashTimer = 0;
 		health = maxhealth;
@@ -61,10 +61,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 		float yy = Input.GetAxisRaw("Vertical");
 		dir = new Vector2(xx, yy);
 		Vector2 refVel = Vector2.zero;
-//		dampValue = health / 500;
-		dampValue = defaultDampValue;
-		speed = defaultSpeed;
-
+		friction = (float)health / 200;
 
 
 		if (routines == null && rb.velocity != Vector2.zero && !bubble.onPop)
@@ -86,7 +83,15 @@ public class PlayerController : MonoBehaviour, IDamageable
 		else 
 		{
 			onAttack = false;
-			rb.velocity = Vector2.SmoothDamp(rb.velocity, dir * speed, ref refVel, dampValue);
+			if (dir != Vector2.zero)
+			{
+				rb.velocity += dir * acceleration * Time.deltaTime;
+				rb.velocity = Vector2.ClampMagnitude(rb.velocity, speed);
+			}
+			else
+			{
+				rb.velocity = Vector2.Lerp(rb.velocity, Vector2.zero, friction * Time.deltaTime);
+			}
 		}
 
 		if (Input.GetKeyDown(KeyCode.Space))

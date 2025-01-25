@@ -41,8 +41,6 @@ public class Enemy : MonoBehaviour, IDamageable
 	private void Update()
 	{
 		onPlayer = Physics2D.OverlapCircle(transform.position, playerRadius, playerMask);
-		if (health <= 50)
-			defaultattackPercentage = 80f;
 
 		if (dashTimer > 0)
 		{
@@ -69,13 +67,13 @@ public class Enemy : MonoBehaviour, IDamageable
 				}
 			}
 
-			attackPercentage += Time.deltaTime*5f;
-			if (attackPercentage > 75)
+			attackPercentage += Time.deltaTime*10f;
+			if (attackPercentage > 55)
 				Attack(player.transform.position - transform.position);
 
 			if (dodgePercentage > 75 && player.onAttack)
 			{
-				if (attackPercentage > 85)
+				if (attackPercentage > 75)
 					Attack(player.transform.position - transform.position);
 				else 
 					Dodge();
@@ -87,9 +85,6 @@ public class Enemy : MonoBehaviour, IDamageable
 			Vector2 dir = player.transform.position - transform.position;
 			transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
 			circleAround = false;
-
-			if (attackPercentage > 75)
-				Attack(player.transform.position - transform.position);
 		}
 		if (routines == null && !bubble.onPop)
 			routines = StartCoroutine(SpawnBubble());

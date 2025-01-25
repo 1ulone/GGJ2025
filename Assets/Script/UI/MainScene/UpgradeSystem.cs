@@ -86,7 +86,7 @@ public class UpgradeSystem : MonoBehaviour
         isTransitioning = true;
         while (CGPanel.alpha < 0.99f)
         {
-            CGPanel.alpha = Mathf.Lerp(CGPanel.alpha, 1, Time.deltaTime * SPEEDTRANSITION);
+            CGPanel.alpha = Mathf.Lerp(CGPanel.alpha, 1, Time.unscaledDeltaTime * SPEEDTRANSITION);
             yield return null;
         }
 
@@ -100,7 +100,7 @@ public class UpgradeSystem : MonoBehaviour
         isTransitioning = true;
         while (CGPanel.alpha > 0.01f)
         {
-            CGPanel.alpha = Mathf.Lerp(CGPanel.alpha, 0, Time.deltaTime * SPEEDTRANSITION);
+            CGPanel.alpha = Mathf.Lerp(CGPanel.alpha, 0, Time.unscaledDeltaTime * SPEEDTRANSITION);
             yield return null;
         }
 
