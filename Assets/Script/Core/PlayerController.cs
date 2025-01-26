@@ -27,10 +27,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 	private int facingDirection;
 	private string state;
 	private float animTimer;
-	private int damage;
 	private int maxhealth = 100;
-
-	public int health { get; private set; }
 	
 	//input
 	private void Start()
@@ -41,9 +38,9 @@ public class PlayerController : MonoBehaviour, IDamageable
 		onHurt = false;
 		speed = defaultSpeed;
 		dashTimer = 0;
-		health = maxhealth;
+		GameManager.instances.health = maxhealth;
+		GameManager.instances.damage = defaultDamage;
 		facingDirection = -1;
-		damage = defaultDamage;
 	}
 
 	private void OnTriggerEnter2D(Collider2D other)
@@ -61,7 +58,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 		float yy = Input.GetAxisRaw("Vertical");
 		dir = new Vector2(xx, yy);
 		Vector2 refVel = Vector2.zero;
-		friction = (float)health / 200;
+		friction = (float)GameManager.instances.health / 200;
 
 
 		if (routines == null && rb.velocity != Vector2.zero && !bubble.onPop)
@@ -77,7 +74,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 			if(col != null)
 			{
 				if (col.gameObject.TryGetComponent<IDamageable>(out IDamageable d))
-					d.GetHurt(damage);
+					d.GetHurt(GameManager.instances.damage);
 			}
 		}
 		else 
@@ -158,12 +155,18 @@ public class PlayerController : MonoBehaviour, IDamageable
 			return;
 
 		SFX.instances.PlayAudio("hurt");
-		CameraShaker.Presets.Explosion2D(6, 8, 0.5f);
+		CameraShaker.Presets.Explosion2D(10, 10, 0.75f);
 		HitStop.instances.Initiate(0.2f);
-		health -= damage;
-		bubble.UpdateBubble(health);
-		HPSystem.Instance.UpdateHealth(health);
+		GameManager.instances.health -= damage;
+		bubble.UpdateBubble(GameManager.instances.health);
+		HPSystem.Instance.UpdateHealth(GameManager.instances.health);
 		ChangeAnimation("cat-hurt");
+
+		if (GameManager.instances.health < 0)
+		{
+			StartCoroutine(EndGame());
+			return;
+		}
 
 		StartCoroutine(Hitflash());
 		onHurt = true;
@@ -171,15 +174,15 @@ public class PlayerController : MonoBehaviour, IDamageable
 
 	public void UpdateDamage(int dmg)
 	{
-		damage += dmg; 
+		GameManager.instances.damage += dmg; 
 	}
 
 	public void UpdateMaxhealth(int h)
 	{
 		maxhealth += h;
-		health = maxhealth;
+		GameManager.instances.health = maxhealth;
 		HPSystem.Instance.UpdateMaxhealth(maxhealth);
-		HPSystem.Instance.UpdateHealth(health);
+		HPSystem.Instance.UpdateHealth(GameManager.instances.health);
 	}
 
 	private IEnumerator Hitflash()
@@ -204,6 +207,17 @@ public class PlayerController : MonoBehaviour, IDamageable
 			transform.Rotate(0, 180, 0);
 			facingDirection *= -1;
 		}
+	}
+
+	private IEnumerator EndGame()
+	{
+		//animation
+		rend.enabled = false;
+		GetComponent<BoxCollider2D>().enabled = false;
+		ChangeAnimation("cat-death");
+		yield return new WaitForSeconds(5f);
+
+		GameOver.Instance.ShowGO();
 	}
 
 	private void OnDrawGizmos()

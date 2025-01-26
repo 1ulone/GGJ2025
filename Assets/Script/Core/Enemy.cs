@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections;
 using CameraShake;
 
@@ -19,6 +18,7 @@ public class Enemy : MonoBehaviour, IDamageable
 	private float health, attackPercentage, dodgePercentage;
 	private float dashTimer;
 	private float angle;
+	private string state;
 
 	private bool onPlayer, circleAround, onHurt;
 
@@ -26,12 +26,14 @@ public class Enemy : MonoBehaviour, IDamageable
 	private Rigidbody2D rb;
 	private Vector3 positionOffset;
 	private SpriteRenderer rend;
+	private Animator anim;
 
 	private void Awake()
 	{
 		player = FindObjectOfType<PlayerController>();
 		rb = GetComponent<Rigidbody2D>();
 		rend = GetComponent<SpriteRenderer>();
+		anim = GetComponent<Animator>();
 
 		health = defaultHealth;
 		attackPercentage = defaultattackPercentage;
@@ -56,6 +58,7 @@ public class Enemy : MonoBehaviour, IDamageable
 			return;
 		}
 	
+		ChangeAnimation("enemy-walk");
 		if (onPlayer)
 		{
 			if (dashTimer <= 0)
@@ -69,12 +72,12 @@ public class Enemy : MonoBehaviour, IDamageable
 
 			attackPercentage += Time.deltaTime*10f;
 			if (attackPercentage > 55)
-				Attack(player.transform.position - transform.position);
+				StartCoroutine(Attack(player.transform.position - transform.position));
 
 			if (dodgePercentage > 75 && player.onAttack)
 			{
 				if (attackPercentage > 75)
-					Attack(player.transform.position - transform.position);
+					StartCoroutine(Attack(player.transform.position - transform.position));
 				else 
 					Dodge();
 			}
@@ -111,7 +114,15 @@ public class Enemy : MonoBehaviour, IDamageable
 		if (ddir.y == 0)
 			ddir = new Vector2(ddir.x, 1);
 
-		Attack(ddir.normalized);
+		StartCoroutine(Attack(ddir.normalized));
+	}
+
+	private void ChangeAnimation(string n)
+	{
+		if (state != n)
+			anim.Play(state);
+		state = n;
+		Debug.Log(state);
 	}
 
 	private Coroutine routines;
@@ -122,13 +133,18 @@ public class Enemy : MonoBehaviour, IDamageable
 		routines = null;
 	}
 
-	private void Attack(Vector2 dir)
+	private IEnumerator Attack(Vector2 dir)
 	{
 		if (dashTimer > 0)
-			return;
+			yield return null;
 
+		dashTimer = 2.75f;
+		rb.velocity = Vector2.zero;
+		ChangeAnimation("enemy-prepare");
+		yield return new WaitForSeconds(2f);
+
+		ChangeAnimation("enemy-idle");
 		attackPercentage = 50;
-		dashTimer = 0.75f;
 		circleAround = false;
 		SFX.instances.PlayAudio("dash");
 		rb.AddForce(dir * dashSpeed, ForceMode2D.Impulse);
@@ -146,7 +162,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
 		
 		bubble.UpdateBubble(health);
-		CameraShaker.Presets.Explosion2D(2, 4, 0.5f);
+		CameraShaker.Presets.Explosion2D(10, 10, 0.75f);
 		HitStop.instances.Initiate(0.2f);
 		StartCoroutine(Hitflash());
 		HPSystem.Instance.UpdateHealthE(health);
@@ -171,6 +187,7 @@ public class Enemy : MonoBehaviour, IDamageable
 	private IEnumerator Die()
 	{
 		yield return new WaitForSeconds(1f);
+		SFX.instances.PlayAudio("levelup");
 		UpgradeSystem.Instance.ShowUpgradeMenu();
 //		SceneManager.LoadScene(1);
 	}

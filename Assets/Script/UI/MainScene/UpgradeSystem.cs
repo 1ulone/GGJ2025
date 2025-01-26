@@ -31,7 +31,7 @@ public class UpgradeSystem : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+//        DontDestroyOnLoad(gameObject);
 
         if (CGPanel == null)
         {
@@ -138,6 +138,15 @@ public class UpgradeSystem : MonoBehaviour
 		yield return new WaitForSecondsRealtime(2f);
 		description.text = isHealthUpgrade ? "You're maximum bubble size has increased!":"You're dash damage has been increased!";
 		yield return new WaitForSecondsRealtime(2f);
+
+		switch(SceneManager.GetActiveScene().buildIndex - 1)
+		{
+			case 1: GameManager.stage1 = true; break;
+			case 2: GameManager.stage2 = true; break;
+			case 3: GameManager.stage3 = true; break;
+		}
+
+		Time.timeScale = 1;
 		SceneManager.LoadScene(1);
 	}
 }

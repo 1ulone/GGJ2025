@@ -1,4 +1,5 @@
 using UnityEngine;
+using CameraShake;
 
 public class BoxBehaviour : MonoBehaviour, IDamageable
 {
@@ -13,7 +14,7 @@ public class BoxBehaviour : MonoBehaviour, IDamageable
 		switch (t)
 		{
 			case 0: state = "box"; break;
-			case 1: state = "box1"; break;
+			case 1: state = "box4"; break;
 			case 2: state = "box2"; break;
 			case 3: state = "box3"; break;
 		}
@@ -24,8 +25,9 @@ public class BoxBehaviour : MonoBehaviour, IDamageable
 
 	public void GetHurt(int damage)
 	{
-		anim.speed = 1;
+		anim.speed = 2;
 		GetComponent<BoxCollider2D>().enabled = false;
-		HitStop.instances.Initiate(0.25f);
+		SFX.instances.PlayAudio("boxbreak");
+		CameraShaker.Presets.Explosion2D(5, 5, 0.5f);
 	}
 }

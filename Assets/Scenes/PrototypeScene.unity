@@ -1536,6 +1536,7 @@ MonoBehaviour:
   defaultattackPercentage: 50
   defaultdodgePercentage: 80
   defaultHealth: 100
+  bubble: {fileID: 0}
 --- !u!212 &835849076
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1854,13 +1855,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b70ba832cc975419a51570a5cb818d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultDamage: 10
   defaultSpeed: 10
   dashMultiplier: 12
-  defaultDampValue: 0.2
   bubbleRadius: 3
+  friction: 0.5
+  acceleration: 10
   enemyMask:
     serializedVersion: 2
     m_Bits: 64
+  bubble: {fileID: 0}
 --- !u!212 &942926387
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -25,7 +25,7 @@ public class HPSystem : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject); 
+//        DontDestroyOnLoad(gameObject); 
     }
 
     void Start()
