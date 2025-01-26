@@ -28,6 +28,6 @@ public class BoxBehaviour : MonoBehaviour, IDamageable
 		anim.speed = 2;
 		GetComponent<BoxCollider2D>().enabled = false;
 		SFX.instances.PlayAudio("boxbreak");
-		CameraShaker.Presets.Explosion2D(5, 5, 0.5f);
+		CameraShaker.Presets.Explosion2D(1.5f, 1f, 0.5f);
 	}
 }

@@ -162,6 +162,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
 		
 		bubble.UpdateBubble(health);
+		Pool.instances.Create("bubble-explosion", transform.position, Quaternion.identity);
 		CameraShaker.Presets.Explosion2D(10, 10, 0.75f);
 		HitStop.instances.Initiate(0.2f);
 		StartCoroutine(Hitflash());

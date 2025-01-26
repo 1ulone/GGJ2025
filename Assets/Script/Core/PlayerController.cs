@@ -158,8 +158,9 @@ public class PlayerController : MonoBehaviour, IDamageable
 		CameraShaker.Presets.Explosion2D(10, 10, 0.75f);
 		HitStop.instances.Initiate(0.2f);
 		GameManager.instances.health -= damage;
-		bubble.UpdateBubble(GameManager.instances.health);
 		HPSystem.Instance.UpdateHealth(GameManager.instances.health);
+		Pool.instances.Create("bubble-explosion", transform.position, Quaternion.identity);
+		bubble.UpdateBubble(GameManager.instances.health);
 		ChangeAnimation("cat-hurt");
 
 		if (GameManager.instances.health < 0)
